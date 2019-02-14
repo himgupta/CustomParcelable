@@ -9,7 +9,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@Database(entities = {CustomParcel.class}, version = 1)
+@Database(entities = {CustomParcel.class}, version = 1,exportSchema = false)
 public abstract class CustomParcelDB extends RoomDatabase {
 
     public abstract CustomParcelDao customParcelDao();
